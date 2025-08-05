@@ -1,0 +1,336 @@
+<!DOCTYPE html> <!-- HTML5 Doctype declaration -->
+<html lang="en"> <!-- HTML document starts with language set to English -->
+
+<head>
+  <!-- Character encoding -->
+  <meta charset="UTF-8">
+  <!-- Responsive design support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title -->
+  <title>Featured Projects</title>
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts (Poppins) CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Internal CSS styling for the page -->
+  <style>
+    /* General Body Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #508ac4, #3977b6, #3b5998);
+      color: #f4f4f4;
+      padding-top: 90px;
+      /* Adjust for fixed navbar */
+    }
+
+    /* Headings */
+    h2,
+    h3 {
+      font-weight: 700;
+      color: #003366;
+    }
+
+    h5 {
+      font-weight: bold;
+      color: #004080;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background: linear-gradient(to right, #41586e, #004080, #0074D9);
+      padding: 1px 0;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar .nav-link {
+      color: white;
+      font-weight: 500;
+      margin-left: 15px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ffdf6c;
+    }
+
+    .navbar-brand img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+
+    /* Section Container Styling */
+    .section-container {
+      background: linear-gradient(to bottom right, #eaf2f8, #d6eaf8, #aed6f1);
+      color: #2c3e50;
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .section-container:hover {
+      transform: translateY(-4px);
+    }
+
+    /* Project Card Styles */
+    .project-card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      background: #ffffff;
+      color: #333;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease-out;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    /* Badge and Buttons */
+    .badge {
+      background: #4a3aff;
+    }
+
+    .btn-demo {
+      background: #004080;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .btn-demo:hover {
+      background: #0074D9;
+      color: #fff;
+    }
+
+    .big-badge {
+      font-size: 1.1rem;
+      padding: 12px 20px;
+    }
+
+    /* Highlights Section */
+    .highlights {
+      background: linear-gradient(to bottom right, #f1f8ff, #d6eaf8, #c6dbf7);
+      color: #2c3e50;
+      border-radius: 15px;
+      padding: 50px;
+      text-align: center;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .highlight-card {
+      background: rgba(0, 64, 128, 0.08);
+      border-radius: 12px;
+      padding: 30px;
+      transition: transform 0.3s ease;
+      color: #2c3e50;
+    }
+
+    .highlight-card:hover {
+      transform: scale(1.05);
+      background: rgba(0, 64, 128, 0.15);
+    }
+
+    .highlight-card i {
+      font-size: 45px;
+      margin-bottom: 15px;
+      color: #ffd966;
+    }
+
+    .highlight-card h5 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="profile.jpg" alt="Profile">
+      </a>
+      <!-- Navbar toggle for mobile -->
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link " href="index.html">Home</a>
+          <a class="nav-link" href="about-us.html">About</a>
+          <a class="nav-link" href="project.html">Projects</a>
+          <a class="nav-link" href="experience.html">Experience</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="contact-us.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Container -->
+  <div class="container py-5">
+
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <span class="badge rounded-pill bg-light text-primary mb-2 big-badge">My Work</span>
+      <h2>Featured Projects</h2>
+      <p class="text-muted">A selection of projects showcasing my skills in web development, design, and
+        problem-solving.</p>
+    </div>
+
+    <!-- Featured Projects Section -->
+    <div class="section-container mb-5 text-center">
+      <h3 class="text-center fw-bold"><i class="bi bi-star-fill text-primary"></i> Featured Work</h3>
+      <div class="row mt-4">
+        <!-- Project 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card project-card">
+            <img src="project1.webp" alt="E-Commerce">
+            <div class="card-body">
+              <h5 class="card-title">E-Commerce Platform</h5>
+              <p class="card-text">A modern, responsive E-Commerce platform built with React.js and Stripe integration.
+              </p>
+              <div class="mb-2">
+                <span class="badge">React</span>
+                <span class="badge">Node</span>
+                <span class="badge">Stripe</span>
+              </div>
+              <a href="#" class="btn btn-demo btn-sm"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card project-card">
+            <img src="project2.jpg" alt="Analytics">
+            <div class="card-body">
+              <h5 class="card-title">Social Media Analytics</h5>
+              <p class="card-text">A comprehensive analytics dashboard for social media performance tracking.</p>
+              <div class="mb-2">
+                <span class="badge">React</span>
+                <span class="badge">Firebase</span>
+                <span class="badge">Google API</span>
+              </div>
+              <a href="#" class="btn btn-demo btn-sm"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Projects Section -->
+    <div class="section-container text-center">
+      <h3 class="text-center fw-bold"><i class="bi bi-folder-fill text-secondary"></i> Other Projects</h3>
+      <div class="row mt-4">
+
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card project-card">
+            <img src="project3.jpg" alt="Task App">
+            <div class="card-body">
+              <h5 class="card-title">Task Management App</h5>
+              <p class="card-text">A collaborative task management application with real-time updates.</p>
+              <div class="mb-2">
+                <span class="badge">React</span>
+                <span class="badge">Node</span>
+                <span class="badge">Socket.io</span>
+              </div>
+              <a href="#" class="btn btn-demo btn-sm">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card project-card">
+            <img src="project4.webp" alt="Weather Dashboard">
+            <div class="card-body">
+              <h5 class="card-title">Weather Dashboard</h5>
+              <p class="card-text">An interactive weather dashboard with beautiful visualizations.</p>
+              <div class="mb-2">
+                <span class="badge">OpenWeather API</span>
+                <span class="badge">React</span>
+              </div>
+              <a href="#" class="btn btn-demo btn-sm">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card project-card">
+            <img src="project5.png" alt="Portfolio Website">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="card-text">A creative portfolio website with 3D animations.</p>
+              <div class="mb-2">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">GSAP</span>
+              </div>
+              <a href="#" class="btn btn-demo btn-sm">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Highlights Section -->
+    <div id="highlights" class="highlights mt-5">
+      <h2 class="mb-5">Highlights</h2>
+      <div class="row">
+
+        <!-- Highlight 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="highlight-card">
+            <i class="bi bi-lightbulb"></i>
+            <h5>Innovation</h5>
+            <p>Always experimenting with creative solutions and modern technologies to make web apps stand out.</p>
+          </div>
+        </div>
+
+        <!-- Highlight 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="highlight-card">
+            <i class="bi bi-people"></i>
+            <h5>Team Collaboration</h5>
+            <p>Love working in teams, ensuring projects run smoothly with great communication and support.</p>
+          </div>
+        </div>
+
+        <!-- Highlight 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="highlight-card">
+            <i class="bi bi-gear"></i>
+            <h5>Problem Solving</h5>
+            <p>Enjoy tackling challenges with a structured and efficient approach, always aiming for excellence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle with Popper (via CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

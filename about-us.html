@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Know Me Better</title>
+
+  <!-- Bootstrap CSS CDN (Content Delivery Network) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts (Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Body Styling with Gradient Background */
+    body {
+      background: linear-gradient(to bottom right,
+          #001f3f,
+          /* deep navy */
+          #004080,
+          /* dark blue */
+          #0074D9,
+          /* bright blue */
+          #00b8d4
+          /* teal accent */
+        );
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background: linear-gradient(to bottom right, #001f3f, #004080, #0074D9);
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar .nav-link {
+      color: white;
+      font-weight: 500;
+      margin-left: 15px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ffdf6c;
+      /* Hover effect color */
+    }
+
+    .navbar-brand img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      /* Makes profile picture round */
+    }
+
+    /* Section Containers Styling */
+    .section-container {
+      background-color: #eeeeee;
+      border-radius: 15px;
+      padding: 40px;
+      margin-bottom: 40px;
+      transition: transform 0.4s ease-out, background-color 0.3s ease;
+    }
+
+    .section-container:hover {
+      transform: translateY(-5px);
+      background-color: #e0e0e0;
+    }
+
+    /* Card Styling */
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease-out;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    /* Progress Bars Styling */
+    .progress-bar {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+    }
+
+    /* Headings Styling */
+    h2,
+    h3 {
+      font-weight: 700;
+      color: #4a3aff;
+    }
+
+    /* Icon Boxes (for What I Love Section) */
+    .icon-box {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .icon-box i {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #4a3aff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Profile Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="profile.jpg" alt="Profile">
+      </a>
+      <!-- Mobile Navbar Toggle -->
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link " href="index.html">Home</a>
+          <a class="nav-link" href="about-us.html">About</a>
+          <a class="nav-link" href="project.html">Projects</a>
+          <a class="nav-link" href="experience.html">Experience</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="contact-us.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+
+    <!-- Know Me Section -->
+    <div class="section-container">
+      <div class="section-title text-center mb-4">
+        <h2>Know Me Better</h2>
+        <p>I'm a passionate developer dedicated to crafting innovative and seamless web experiences.</p>
+      </div>
+      <div class="row">
+        <!-- My Story Card -->
+        <div class="col-md-6 mb-3">
+          <div class="card p-4 h-100">
+            <h5><i class="bi bi-person-fill"></i> My Story</h5>
+            <p>
+              My journey into web development didn't begin with a goal of freelancing or earning money —
+              it started with a simple desire: I wanted to build something of my own.
+              I've always been curious about how digital experiences are created...
+            </p>
+          </div>
+        </div>
+        <!-- Stats Card -->
+        <div class="col-md-6 mb-3">
+          <div class="card p-4 text-center h-100">
+            <div class="row">
+              <div class="col-6 mb-4">
+                <h4 class="text-primary">50+</h4>
+                <p>Projects</p>
+              </div>
+              <div class="col-6 mb-4">
+                <h4 class="text-primary">5+</h4>
+                <p>Years</p>
+              </div>
+              <div class="col-6">
+                <h4 class="text-primary">30+</h4>
+                <p>Clients</p>
+              </div>
+              <div class="col-6">
+                <h4 class="text-primary">100%</h4>
+                <p>Satisfaction</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Skills Section -->
+    <div class="section-container">
+      <h3 class="text-center mb-4">Technical Skills</h3>
+      <div class="row">
+        <!-- Skill with Progress Bar -->
+        <div class="col-md-6 mb-3">
+          <label>HTML5, CSS3, JavaScript (ES6+)</label>
+          <div class="progress">
+            <div class="progress-bar" style="width:95%">95%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label>Node.js, Express.js</label>
+          <div class="progress">
+            <div class="progress-bar" style="width:85%">85%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label>UI/UX Design</label>
+          <div class="progress">
+            <div class="progress-bar" style="width:90%">90%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label>GSAP Animation</label>
+          <div class="progress">
+            <div class="progress-bar" style="width:95%">95%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label>React.js, JSX, React Router</label>
+          <div class="progress">
+            <div class="progress-bar" style="width:80%">80%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label>Bootstrap, Tailwind CSS</label>
+          <div class="progress">
+            <div class="progress-bar" style="width:85%">85%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- What I Love Section -->
+    <div class="section-container">
+      <h3 class="text-center mb-4">What I Love</h3>
+      <div class="row text-center">
+        <!-- Love Cards with Icons -->
+        <div class="col-md-4 mb-4">
+          <div class="card icon-box h-100">
+            <i class="bi bi-code-slash"></i>
+            <h6>Clean Code</h6>
+            <p>Writing maintainable, scalable code</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card icon-box h-100">
+            <i class="bi bi-brush"></i>
+            <h6>Design</h6>
+            <p>Creating beautiful user interfaces</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card icon-box h-100">
+            <i class="bi bi-laptop"></i>
+            <h6>Development</h6>
+            <p>Building interactive web experiences</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card icon-box h-100">
+            <i class="bi bi-cup-hot"></i>
+            <h6>Coffee</h6>
+            <p>Fuel for late-night coding sessions</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card icon-box h-100">
+            <i class="bi bi-heart"></i>
+            <h6>Open Source</h6>
+            <p>Contributing to the community</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card icon-box h-100">
+            <i class="bi bi-lightbulb"></i>
+            <h6>Creativity</h6>
+            <p>Bringing ideas to life with code</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

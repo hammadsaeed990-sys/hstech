@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta & Title -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Journey</title>
+
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    /* General body styles */
+    body {
+      background: linear-gradient(135deg, #5f9ea0, #527d99);
+      font-family: 'Poppins', sans-serif;
+      color: #2c2c2c;
+      padding-top: 80px;
+      /* Padding to avoid content hidden behind navbar */
+    }
+
+    /* Navbar styles */
+    .navbar {
+      background: linear-gradient(to bottom right, #001f3f, #004080, #0074D9);
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar .nav-link {
+      color: white;
+      font-weight: 500;
+      margin-left: 15px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ffdf6c;
+    }
+
+    .navbar-brand img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    /* Container for timeline content */
+    .timeline-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* Section titles */
+    .section-title {
+      text-align: center;
+      font-size: 2.3rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+    /* Card styling for experiences & education */
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .card:hover {
+      background-color: #f0f0f0;
+      transform: translateY(-5px);
+    }
+
+    .card h5 {
+      color: #2a2a6c;
+      font-weight: 600;
+    }
+
+    .card p,
+    .card ul,
+    .card h6 {
+      color: #333;
+    }
+
+    .card ul {
+      margin-left: 20px;
+    }
+
+    /* Custom badge style */
+    .badge-custom {
+      display: inline-block;
+      background-color: #e8eaff;
+      color: #2a2a6c;
+      font-weight: 600;
+      margin: 6px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      padding: 8px 14px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .badge-custom:hover {
+      background-color: #d1d1d1;
+      color: #000;
+      transform: scale(1.08);
+    }
+
+    /* Education-specific card styling */
+    .education-card {
+      text-align: center;
+    }
+
+    .education-card h5 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.8rem;
+      }
+
+      .badge-custom {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Fixed Full-Width Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top w-100">
+    <div class="container">
+      <!-- Profile Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="profile.jpg" alt="Profile">
+      </a>
+
+      <!-- Toggler Button (for mobile) -->
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link " href="index.html">Home</a>
+          <a class="nav-link" href="about-us.html">About</a>
+          <a class="nav-link" href="project.html">Projects</a>
+          <a class="nav-link" href="experience.html">Experience</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="contact-us.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Timeline Section -->
+  <div class="timeline-container">
+
+    <!-- Title & Description -->
+    <h2 class="section-title">My Journey</h2>
+    <p class="text-center text-light mb-5">A timeline of my professional experience, education, and growth as a
+      developer.</p>
+
+    <!-- Experience Card 1 -->
+    <div class="card p-4">
+      <h5>Basic IT & Networking Assistant</h5>
+      <div class="d-flex flex-wrap text-muted mb-3">
+        <i class="bi bi-calendar me-2"></i> (2019-2022) &nbsp;
+      </div>
+      <p>
+        Basic IT & Networking Assistant<br><small>From 2019 to 2022, I gained basic
+          experience in computer labs during my ICS and CS studies. I worked on small projects , practiced typing,
+          used
+          MS Office, and learned about computer hardware and networking basics.
+      </p>
+      <h5>Web Developer</h5>
+      <div class="d-flex flex-wrap text-muted mb-3">
+        <i class="bi bi-calendar me-2"></i> (2023-2025) &nbsp;
+      </div>
+      <p>
+        Built 30+ frontend features and
+        completed several complex development projects with clean, efficient code.
+      </p>
+
+      <h6>Key Achievements</h6>
+      <ul>
+        <li>Developed and deployed 30+ responsive web features using HTML, CSS, JavaScript, and Bootstrap</li>
+        <li>Built interactive and user-friendly frontend interfaces optimized for mobile and desktop devices.</li>
+        <li>Collaborated on uni-level IT projects and enhanced understanding of real-world development workflows.</li>
+      </ul>
+      <h6>Tools & Methods</h6>
+      <span class="badge-custom">Visual Studio Code</span>
+      <span class="badge-custom">Classroom Activities</span>
+      <span class="badge-custom">Typing Practice Software</span>
+      <span class="badge-custom">Git & GitHub</span>
+      <span class="badge-custom">MS Office (Word, Excel, PowerPoint)</span>
+    </div>
+
+    <!-- Experience Card 2 -->
+    <div class="card p-4">
+      <h5>Frontend Web Developer</h5>
+      <div class="d-flex flex-wrap text-muted mb-3">
+        <i class="bi bi-calendar me-2"></i> 2023-2025 &nbsp;
+
+      </div>
+      <p>
+        Built 30+ responsive frontend components and completed multiple interactive web projects using HTML, CSS,
+        JavaScript, and Bootstrap. Developed clean, efficient code and focused on mobile-first design and user
+        experience.
+      </p>
+      <h6>Key Achievements</h6>
+      <ul>
+        <li>Created fully responsive websites using HTML, CSS, JavaScript, and Bootstrap.</li>
+        <li>Improved frontend performance through code optimization</li>
+        <li>Collaborated with teammates to explore new frameworks and design patterns</li>
+      </ul>
+      <h6>Technologies Used</h6>
+      <span class="badge-custom">HTML</span>
+      <span class="badge-custom">CSS</span>
+      <span class="badge-custom">JavaScript</span>
+      <span class="badge-custom">Bootstrap</span>
+    </div>
+
+    <!-- Education Section -->
+    <h2 class="section-title mt-5">Education</h2>
+    <div class="row g-4">
+      <!-- Education Card 1 -->
+      <div class="col-md-6">
+        <div class="card education-card p-4">
+          <h5>Intermediate in ICS</h5>
+          <p class="text-muted mb-1">Punjab Group of Colleges</p>
+          <span class="badge-custom">2021-2023</span>
+          <span class="badge-custom">Sialkot</span>
+        </div>
+      </div>
+
+      <!-- Education Card 2 -->
+      <div class="col-md-6">
+        <div class="card education-card p-4">
+          <h5>ADP-IT</h5>
+          <p class="text-muted mb-1">University of Sialkot</p>
+          <span class="badge-custom">2023-2025</span>
+          <span class="badge-custom">Sialkot</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

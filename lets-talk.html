@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Let’s Talk</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #b2b5b8, #909192);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .talk-box {
+      background: #f3eeee;
+      padding: 60px 40px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .talk-box h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #003366;
+      margin-bottom: 15px;
+    }
+
+    .talk-box p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 0;
+    }
+
+    .talk-box::before {
+      content: "💬";
+      font-size: 40px;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 576px) {
+      .talk-box {
+        padding: 40px 20px;
+      }
+
+      .talk-box h1 {
+        font-size: 2rem;
+      }
+
+      .talk-box p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="talk-box">
+    <h1>Let’s Talk</h1>
+    <p>Whether it's ideas, projects, or just a friendly chat—I'm always open to conversations.</p>
+  </div>
+
+</body>
+</html>

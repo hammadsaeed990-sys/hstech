@@ -1,0 +1,180 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML -->
+<html lang="en"> <!-- HTML starts, language set to English -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Sets character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+  <title>Resume</title> <!-- Page title -->
+
+  <!-- Bootstrap 5 CSS CDN (used for layout, responsive design, components) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN (used for icons like phone, email, location) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts (Poppins) used for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* General body styling */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #424242;
+    }
+
+    /* Main resume card styling */
+    .resume {
+      background: #a1a0a0;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      max-width: 1000px;
+      margin: 30px auto;
+    }
+
+    /* Profile picture styling */
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Section heading style */
+    .section-title {
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    /* Icon styling in list */
+    .info-list i {
+      width: 20px;
+    }
+
+    /* Left column background and text styling */
+    .left-column {
+      background-color: #343a40;
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    /* Left column heading color */
+    .left-column h6 {
+      color: #ffc107;
+    }
+
+    /* Contact and skill list styling */
+    .info-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info-list li {
+      margin-bottom: 10px;
+    }
+
+    .info-list li i {
+      margin-right: 8px;
+    }
+
+    /* Padding for skills and language lists */
+    .skills,
+    .languages {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Resume container row -->
+  <div class="container">
+    <div class="resume row g-0">
+
+      <!-- Left sidebar column -->
+      <div class="col-md-4 left-column text-justify">
+        <!-- Profile image in center -->
+        <div class="d-flex justify-content-center">
+          <img src="profile.jpg" alt="" class="profile-img mb-3" onclick="window.location.href='resume.html'"
+            style="cursor:pointer;">
+        </div>
+
+        <!-- About Me section -->
+        <h5 class="mt-3">About Me</h5>
+        <p class="small">Hi, I'm Hammad Saeed, an enthusiastic IT student and passionate Web Developer. I love
+          turning ideas into interactive digital experiences using modern technologies like HTML, CSS, JavaScript,
+          Bootstrap and many more. With a strong foundation in computer science and a creative eye, I enjoy building
+          clean,
+          responsive, and user-friendly websites.</p>
+
+        <!-- Contact section -->
+        <h6 class="section-title">Contact</h6>
+        <ul class="info-list">
+          <li><i class="bi bi-telephone-fill"></i> +92 3200786969</li>
+          <li><i class="bi bi-envelope-fill"></i>hammadsaeed990@gmail.com</li>
+          <li><i class="bi bi-geo-alt-fill"></i> Amanat Pura, Jammu Road,Skt</li>
+        </ul>
+
+        <!-- Skills section -->
+        <h6 class="section-title">Skills</h6>
+        <ul class="skills">
+          <li>Frontend </li>
+          <li> HTML & CSS </li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+        </ul>
+
+        <!-- Languages section -->
+        <h6 class="section-title">Language</h6>
+        <ul class="languages">
+          <li>English</li>
+          <li>Urdu</li>
+        </ul>
+      </div>
+
+      <!-- Right main content column -->
+      <div class="col-md-8 p-4">
+        <!-- Name and title -->
+        <h2 class="fw-bold">Hammad Saeed</h2>
+        <h5 class="text-muted mb-4">Web-Developer</h5>
+
+        <!-- Education section -->
+        <h6 class="section-title"><i class="bi bi-mortarboard-fill"></i> Education</h6>
+        <p><strong>(2019–2021)</strong><br>Government Comprehensive High School<br>Matric in Computer Science</p>
+
+        <p><strong>(2021–2023)</strong><br>Punjab Group of Colleges<br>Intermediate in CS</p>
+
+        <p><strong>(2023–2025)</strong><br>University of Sialkot<br>ADP-IT</p>
+
+        <!-- Experience section -->
+        <h6 class="section-title mt-4"><i class="bi bi-briefcase-fill"></i> Experience</h6>
+        <p><strong>(2019-2022)</strong><br>Basic IT & Networking Assistant<br><small>From 2019 to 2022, I gained basic
+            experience in computer labs during my ICS and CS studies. I worked on small projects , practiced typing,
+            used
+            MS Office, and learned about computer hardware and networking basics.</small></p>
+
+        <p><strong>(2023–2025)</strong><br>Web Developer
+
+          <br><small>Built 30+ frontend features and
+            completed several complex development projects with clean, efficient code.
+          </small>
+        </p>
+      </div>
+
+      <!-- Back button aligned to right -->
+      <div class="text-end mt-4">
+        <a href="index.html" class="btn btn-dark" style="width: 25%;">
+          ← Back
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript bundle (used for components like modals, dropdowns etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
